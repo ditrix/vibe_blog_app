@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
         User::factory()
             ->withoutTwoFactor()
             ->create([
-                'name' => 'Администратор',
+                'name' => 'Адміністратор',
                 'email' => 'admin@mail.com',
                 'password' => 'password',
                 'email_verified_at' => now(),

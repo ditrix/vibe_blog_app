@@ -28,7 +28,7 @@ it('seeds admin user and demo posts', function (): void {
     $admin = User::query()->where('email', 'admin@mail.com')->first();
 
     expect($admin)->not->toBeNull()
-        ->and($admin->name)->toBe('Администратор');
+        ->and($admin->name)->toBe('Адміністратор');
 
     expect(Post::query()->count())->toBe(5)
         ->and(Post::query()->where('status', Post::STATUS_PUBLISHED)->count())->toBeGreaterThanOrEqual(3)
