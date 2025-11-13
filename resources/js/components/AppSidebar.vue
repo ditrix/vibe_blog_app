@@ -27,6 +27,11 @@ const mainNavItems: NavItem[] = [
 
 const footerNavItems: NavItem[] = [
     {
+        title: 'Application Repo',
+        href: 'https://github.com/ditrix/vibe_blog_app',
+        icon: Folder,
+    },
+    {
         title: 'Github Repo',
         href: 'https://github.com/laravel/vue-starter-kit',
         icon: Folder,
